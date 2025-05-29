@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "tag": "minecraft:experience_containers"
+    }
+  },
+  "result": {
+    "item": "xpextractor:xp_extractor",
+    "count": 1
+  },
+  "category": "misc",
+  "show_notification": true,
+  "group": "xp_tools"
+} 

@@ -1,0 +1,78 @@
+# Gradle
+.gradle/
+build/
+out/
+classes/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# IDE - Eclipse
+*.launch
+bin/
+.settings/
+.metadata/
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+/out/
+
+# IDE - VSCode
+.vscode/
+.settings/
+bin/
+.classpath
+.project
+*.code-workspace
+.history
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Fabric and Minecraft
+run/
+logs/
+.fabric/
+remappedSrc/
+*.launch.xml
+runClient.launch
+runServer.launch
+
+# Java
+hs_err_*.log
+replay_*.log
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.hprof
+*.jfr
+.mtj.tmp/
+
+# Exceptions - Files to keep
+!gradle/wrapper/gradle-wrapper.jar
+!libs/*.jar
+
+# Local Configuration
+local.properties
+*.log 

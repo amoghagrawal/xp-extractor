@@ -1,0 +1,75 @@
+plugins {
+    id 'fabric-loom' version '1.4.5'
+    id 'maven-publish'
+}
+
+version = "0.1.0"
+group = "com.example"
+archivesBaseName = "xpextractor"
+
+repositories {
+    // Add repositories to retrieve artifacts from in here
+    // For example, Fabric's Maven:
+    maven { url "https://maven.fabricmc.net/" }
+    // If you need JitPack for any reason:
+    // maven { url 'https://jitpack.io' }
+    mavenCentral()
+}
+
+dependencies {
+    // Minecraft
+    minecraft "com.mojang:minecraft:1.21.1"
+    // Yarn Mappings
+    mappings "net.fabricmc:yarn:1.21.1+build.1:v2"
+    // Fabric Loader - using latest recommended version
+    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+    // Fabric API - using the latest version
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.115.1+1.21.1"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+    it.options.release = 21
+}
+
+java {
+    // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+    // if it is present.
+    // If you remove this line, sources will not be generated.
+    withSourcesJar()
+    
+    // Set Java version compatibility
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.archivesBaseName}" }
+    }
+}
+
+// configure the maven publication
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+
+    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+    repositories {
+        // Add repositories to publish to here.
+        // This is an example that is disabled by default:
+        // mavenLocal()
+    }
+} 

@@ -1,0 +1,12 @@
+{
+  "item.xpextractor.xp_extractor": "§5XP Extractor",
+  "item.xpextractor.xp_extractor.tooltip": "A powerful lodestone compass imbued with the essence of experience",
+  "item.xpextractor.xp_extractor.usage": "Right-click to extract XP into bottles",
+  "item.xpextractor.xp_extractor.bottles_info": "Gives %s XP bottles per extraction",
+  "item.xpextractor.xp_extractor.extractions_info": "Can extract up to %s times per use",
+  "item.xpextractor.xp_extractor.durability": "Durability: %s uses remaining",
+  "message.xpextractor.insufficient_xp": "§c§l[XP Extractor]§r §eNot enough XP! §7(Need %s XP)",
+  "message.xpextractor.extraction_success": "Extracted XP into an Experience Bottle!",
+  "message.xpextractor.extraction_multiple": "Used %s XP to create %s Experience Bottles!",
+  "message.xpextractor.too_damaged": "§c§l[XP Extractor]§r §eThis XP Extractor is too damaged to use!"
+} 

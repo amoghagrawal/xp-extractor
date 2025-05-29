@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "xpextractor",
+  "version": "${version}",
+  "name": "XP Extractor",
+  "description": "A mod that allows extracting and manipulating XP in Minecraft.",
+  "authors": [
+    "Amogh Agrawal"
+  ],
+  "contact": {
+    "homepage": "https://github.com/amoghagrawal/xpextractor",
+    "sources": "https://github.com/amoghagrawal/xpextractor",
+    "email": "amogh.ggn@gmail.com"
+  },
+  "license": "MIT",
+  "icon": "assets/xpextractor/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.xpextractor.XPExtractor"
+    ],
+    "client": [
+      "com.example.xpextractor.client.XPExtractorClient"
+    ]
+  },
+  "mixins": [
+    "xpextractor.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21.1",
+    "java": ">=17",
+    "fabric-api": ">=0.115.1"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+} 

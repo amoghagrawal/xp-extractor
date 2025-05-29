@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "xpextractor:xp_extractor"
+    ]
+  },
+  "criteria": {
+    "has_xp_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:experience_bottle"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_xp_bottle"
+    ]
+  ]
+} 

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:compass",
+    "minecraft:recovery_compass",
+    "minecraft:map",
+    "minecraft:filled_map"
+  ]
+} 
